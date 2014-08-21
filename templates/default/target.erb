@@ -4,7 +4,7 @@ sync {
     source      = "<%= @source %>",
 <% if @mode == 'rsync' -%>
     <% if @host -%>
-    target      = "<% if @user %><%= @user %>@<% end %><%= @host %>:<%= @target %>",
+    target      = "<% if @user %><%= @user %>@<% end %><%= @host %>::<%= @target %>",
     <% else -%>
     target      = "<%= @target %>",
     <% end -%>
