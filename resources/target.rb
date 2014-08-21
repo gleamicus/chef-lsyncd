@@ -9,4 +9,5 @@ attribute :host, :kind_of => [String, NilClass]
 attribute :rsync_opts, :kind_of => [Array, NilClass]
 attribute :exclude, :kind_of => [Array, NilClass]
 attribute :exclude_from, :kind_of => [String, NilClass]
+attribute :delete, :kind_of => [String, NilClass]
 attribute :cookbook, :kind_of => String, :default => 'lsyncd'
