@@ -56,7 +56,8 @@ action :create do
       :host => new_resource.host,
       :rsync_opts => rsync_opts,
       :exclude => exclude,
-      :exclude_from => new_resource.exclude_from
+      :exclude_from => new_resource.exclude_from,
+      :delete => new_resource.delete
     })
     action :create
   end
